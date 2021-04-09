@@ -85,10 +85,6 @@ const Dashboard = () => {
     </div>
   ));
 
-  useEffect(() => {
-    console.log("asdas");
-  }, [todoElements]);
-
   const listCategories = categories.map((val, index) => (
     <li key={index} style={{ display: "flex" }}>
       <input
