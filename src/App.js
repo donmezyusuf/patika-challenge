@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import "./styles/App.css";
 
-function App() {
+import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
+import LandingPage from "./pages/landing";
+import Dashboard from "./pages/dashboard";
+import React from "react";
+import UserDataContext from "./components/UserDataContext";
+
+const App = () => {
+  const [data, setData] = React.useState({
+    firstName: "",
+    lastName: "",
+  });
+
+  React.useEffect(() => {
+    console.log(data);
+  }, [data]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <UserDataContext.Provider value={[data, setData]}>
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <LandingPage />
+          </Route>
+          <Route path="/dashboard">
+            <Dashboard />
+          </Route>
+        </Switch>
+      </Router>
+    </UserDataContext.Provider>
   );
-}
+};
 
 export default App;

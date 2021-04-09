@@ -1,0 +1,38 @@
+.CardContainer {
+  width: 25vw;
+  height: 35vh;
+  background-color: cornflowerblue;
+  margin-top: 20px;
+  border-radius: 6px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.CardHeaderInput2 {
+  margin-left: 12px;
+  margin-top: 12px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  width: 75%;
+}
+
+label {
+  font-size: 0.8em;
+}
+
+.CardHeaderInput:focus {
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 640px) {
+  .CardContainer {
+    width: 90vw;
+    height: 45vh;
+  }
+
+  .CardHeaderInput2 {
+    width: 80%;
+  }
+}

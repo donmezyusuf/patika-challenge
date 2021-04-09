@@ -1,0 +1,227 @@
+body {
+  font-family: "Roboto", serif;
+  font-size: 1.2em;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 1vw;
+}
+ul li {
+  display: flex;
+}
+
+.DashboardContainer {
+  display: flex;
+}
+
+.SidebarContainer {
+  background-color: #dfe6e9;
+  width: 100%;
+  max-width: 20vw;
+  min-width:200px;
+}
+
+.ContentContainer {
+  background-color: orange;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 12px;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.UserInfoContainer {
+  display: flex;
+  background-color: #dfe6e9;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid black;
+}
+
+.UserInfoContainer img {
+  width: 50px;
+}
+
+.UserInfo {
+  margin-left: 4px;
+}
+
+.checkboxStyle {
+  width: 20px;
+  height: 20px;
+  outline: red;
+}
+
+.checkboxStyle:checked {
+  border: 1px solid #adb8c0;
+  color: red;
+}
+
+.CreateCart {
+  width: 25vw;
+  height: 35vh;
+  background-color: cornflowerblue;
+  margin-top: 20px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+}
+
+.CardHeaderInput {
+  margin-left: 12px;
+  margin-top: 12px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  width: 50%;
+  margin-right: 1vw;
+
+}
+.TodoContentInput {
+  padding: 0;
+  width: 15vw;
+  align-self: center;
+  height: 20px;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+}
+
+.TodoContainer {
+  height: 24vh;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.TodoContainer::-webkit-scrollbar {
+  width: 10px;
+}
+
+.TodoContainer::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+}
+
+.TodoContainer::-webkit-scrollbar-thumb {
+  background: lightgray;
+  border-radius: 16px;
+}
+
+.CreateButton {
+  width: 8vw;
+  align-self: center;
+  border-radius: 4px;
+  height: 28px;
+  margin-top: 8px;
+  outline: none;
+}
+
+.AddTodoInput {
+  margin-left:6px;
+  width:15vw;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: #34495e;
+  outline: none;
+  background-color: transparent;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 640px) {
+  .DashboardContainer {
+    flex-direction: column;
+    max-width: 100%;
+    /*background: red;*/
+  }
+
+  .ContentContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    justify-content: flex-start;
+  }
+
+  .SidebarContainer {
+    min-height: 14vh;
+    max-width: 100%;
+  }
+
+  .CreateCart {
+    width: 90vw;
+    height: 45vh;
+    margin-bottom: 20px;
+  }
+
+  .CreateButton {
+    width: 25vw;
+    align-self: center;
+    border-radius: 4px;
+    height: 30px;
+    margin-bottom: 12px;
+  }
+
+  .TodoContainer {
+    height: 34vh;
+  }
+
+  .AddTodoInput{
+    width: 50vw;
+  }
+
+  .TodoContentInput{
+    width: 50vw;
+  }
+
+  body {
+    font-size: 1.4em;
+  }
+
+  ul {
+    display: flex;
+  }
+  ul li {
+    margin-left: 8px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 640px) {
+  .DashboardContainer {
+    /*background: green;*/
+  }
+  .CreateCart{
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .DashboardContainer {
+    /*background: blue;*/
+  }
+  .CreateCart{
+    width: 25vw;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .DashboardContainer {
+    /*background: orange;*/
+  }
+  .SidebarContainer {
+    max-width: 240px;
+  }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .DashboardContainer {
+    /*background: pink;*/
+  }
+}

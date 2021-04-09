@@ -1,0 +1,123 @@
+body {
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.userInfoContainer {
+  width: 40vw;
+  height: 40vh;
+  border: 1.4px solid lightgray;
+  border-radius: 10px;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 640px) {
+  .userInfoContainer {
+    width: 90vw;
+    height: 50vh;
+    /*background: red;*/
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 640px) {
+  .userInfoContainer {
+    width: 90vw;
+    height: 50vh;
+    /*background: green;*/
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .userInfoContainer {
+    width: 80vw;
+    height: 45vh;
+    /*background: blue;*/
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .userInfoContainer {
+    width: 70vw;
+    height: 40vh;
+    /*background: orange;*/
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .userInfoContainer {
+    width: 50vw;
+    height: 40vh;
+    /*background: pink;*/
+  }
+}
+
+.innerContainer {
+  align-self: center;
+}
+
+.firstNameContainer {
+}
+
+.lastNameContainer {
+  margin-top: 1em;
+}
+
+.textInput {
+  width: 200px;
+  margin-left: 6px;
+  height: 34px;
+  border-color: lightgray;
+  border-width: 0.3px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-size: 1em;
+  background-color: transparent;
+}
+
+.textInput:focus {
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: #34495e;
+}
+
+.textInput:focus::placeholder {
+  color: transparent;
+}
+
+.buttonContainer {
+  margin-top: 2em;
+  text-align: center;
+}
+
+.buttonContainer button {
+  outline: none;
+  border: none;
+  width: 90px;
+  height: 36px;
+  border-radius: 4px;
+  background-color: #2980b9;
+  color: white;
+  font-weight: 600;
+}
+
+.innerContainer label {
+  font-size: 1.2em;
+}
